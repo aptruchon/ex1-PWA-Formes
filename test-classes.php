@@ -32,7 +32,7 @@ $formes = [$PD1, $PD2, $CB1, $CB2, $CY1, $CY2, $SP1, $SP2];
 echo "<h1>Descriptions des objets</h1>";
 
 for ($i=0; $i < count($formes); $i++) { 
-    echo $formes[$i]->__toString();
+    echo $formes[$i];
     echo "<br><br>";
 }
 

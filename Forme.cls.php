@@ -2,10 +2,15 @@
 abstract class Forme
 {
     // Propriétés (d'instances)
-    private static $nbFormes;
+    private static $nbFormes = 0;
     private $id;
     
     public function getID()
+    {
+        return $this->id;
+    }
+
+    protected static function getNbFormes() : int
     {
         return self::$nbFormes;
     }
@@ -14,6 +19,8 @@ abstract class Forme
     function __construct($id)
     {
         $this->id = $id;
+
+        self::$nbFormes++;
     }
 
     public function comparerAvec($f)

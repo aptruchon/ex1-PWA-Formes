@@ -9,6 +9,7 @@ class PaveDroit extends Forme
     // Constructeur
     function __construct($longueur, $largeur, $hauteur)
     {
+        parent::__construct(parent::getNbFormes() + 1);
         $this->longueur = round($longueur, 2);
         $this->largeur = round($largeur, 2);
         $this->hauteur = round($hauteur, 2);

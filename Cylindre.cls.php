@@ -8,6 +8,7 @@ Class Cylindre extends Forme
     // Constructeur
     function __construct($rayon, $hauteur)
     {
+        parent::__construct(parent::getNbFormes() + 1);
         $this->rayon = round($rayon, 2);
         $this->hauteur = round($hauteur, 2);
     }
